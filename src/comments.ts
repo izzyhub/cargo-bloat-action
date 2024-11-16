@@ -221,7 +221,7 @@ export function createComment(masterCommit: string | null, currentCommit: string
   const compareCommitText =
     masterCommit == null
       ? ''
-      : `([Compare with baseline commit](https://github.com/${context.repo.owner}/${context.repo.repo}/compare/${masterCommit}..${currentCommit}))`
+      : `([Compare with baseline commit](https://gitea.izzys.place/${context.repo.owner}/${context.repo.repo}/compare/${masterCommit}..${currentCommit}))`
 
   let innerComment
 
